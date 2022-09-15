@@ -1,0 +1,16 @@
+﻿<Window x:Class="Sokoban.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sokoban"
+        mc:Ignorable="d"
+        Title="Sokoban" Height="699" Width="712" ResizeMode="NoResize" Background="#FF3F693B">
+    <Canvas Margin="0,0,-192,-194" Width="1500" Height="1500">
+        <Canvas x:Name="cnvGrille" Height="500" Width="500" Canvas.Left="102.5" Canvas.Top="128.5" Background="Black"/>
+        <Canvas x:Name="cnvMobiles" Height="500" Width="500" Canvas.Left="102.5" Canvas.Top="128.5"/>
+        <Button x:Name="btnRecommencer" Content="Recommencer" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="108" Canvas.Top="36" Height="64" Width="186" FontWeight="Normal" FontFamily="Impact" FontSize="20" Click="btnRecommencer_Click"/>
+        <TextBlock TextWrapping="Wrap" Canvas.Left="318" Canvas.Top="56.556" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Impact" FontSize="18"><Run Text="Nombre de déplacement"/><Run Language="fr-fr" Text=" "/><Run Text=": "/></TextBlock>
+        <TextBlock x:Name="txtNbDeplacement" TextWrapping="Wrap" Canvas.Left="514" Canvas.Top="55" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Width="28" TextAlignment="Right"><Run Language="fr-fr" Text="0"/></TextBlock>
+    </Canvas>
+</Window>
